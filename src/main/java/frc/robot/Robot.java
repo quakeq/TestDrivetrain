@@ -87,6 +87,7 @@ public class Robot extends TimedRobot {
   @Override
   public void teleopPeriodic() {
     drive.manualDrive(xbox.LgetXaxis(), xbox.LgetYaxis(), xbox.RgetXaxis());
+    drive.disable(xbox.getAButton());
   }
 
   /** This function is called once when the robot is disabled. */

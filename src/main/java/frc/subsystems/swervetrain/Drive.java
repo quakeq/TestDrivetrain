@@ -66,4 +66,11 @@ public class Drive {
         }
     }
 
+    public void disable(boolean button){
+        this.frontL.disable();
+        this.frontR.disable();
+        this.backL.disable();
+        this.backR.disable();
+    }
+
 }

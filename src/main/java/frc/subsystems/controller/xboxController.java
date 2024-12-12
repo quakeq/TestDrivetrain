@@ -23,4 +23,7 @@ public class xboxController extends Joystick {
     public double LgetDirection(){
         return getDirectionRadians();
     }
+    public boolean getAButton() {
+        return getRawButton(1);
+    }
 }
